@@ -1,0 +1,146 @@
+
+<html> 
+  <head>
+  	<link type="text/css" rel="stylesheet" href="main.css" />
+    <title> bikes </title>
+    <script type="text/javascript">
+     function banner(){
+      var text = confirm("did you really wont to click on this banner?");
+      return text;
+     }
+
+    function answer(){
+      var radio = document.getElementsByName("trivia");
+      var selection = false ;
+      var message = " ";
+      for( var i = 0; i < radio.length; i++) {
+      if(radio[i].value == "yes" && radio[i].checked == true) { 
+      selection = true; 
+      } //end if statement 
+    } //end for loop
+    if(selection == true) {
+     message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+    } else { 
+     message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+    }
+     document.getElementById("response").innerHTML = message;
+
+  }
+
+    </script>
+  </head>
+  <body id="backgound">
+  
+  <a oncleck="return banner()" href="https://www.betterhealth.vic.gov.au/health/healthyliving/cycling-health-benefits">
+
+  <header id="banner">
+  
+
+ <center><h1> bikes are important </h1></center>
+  <P>bikes are used for <strong>transportation</strong> and<i> are very fast</i> and <u> can go on tough terrain</u> if you are a mountin biker but they also go fast on roads and there are all kinds of bikes like<span class="wrap-text"> road bike, mountain bikes, down hill bikes</span>... there are so many bikes I don't want to list them all right now.  
+  </P>
+  </heaber>
+  </a>
+
+  <nav>
+    <ul id="navmenu">
+      <li class="navitem"> <a href="index.html"> home </a> </li>
+      <li class="navitem"> <a href="history.html"> history </a> </li>
+      <li class="navitem"> <a href="how to fixe your bike.html"> how to fixe your bike </a> </li>
+      <li class="navitem"> <a href="bike parks.html"> bike parks </a></li>
+    </ul>
+  </nav>
+ 
+
+   <div class="rightside">
+
+
+
+
+  
+ <div class="wrep-list">
+  <ol>
+    <li>road bike</li>
+    <li>mountin bike</li>
+    <li>BMX bike</li>
+  </ol>
+</div>
+  
+    
+
+
+<div class="leftside">
+
+
+   </div>
+
+  
+
+   <img width="30%" src="https://thumbs.dreamstime.com/z/classic-city-bike-professional-people-taste-74044691.jpg" />
+ 
+   <img width="30%" src="http://thumbs.dreamstime.com/z/bmx-bicycle-15764053.jpg" />
+   
+   <img width="32%" src="https://thumbs.dreamstime.com/z/mountain-bike-made-blue-curacao-vodka-grapefruit-juice-s-easy-drinking-slightly-sweet-tart-bright-caribbean-blue-58328094.jpg" />
+
+   <hr />
+   
+   <center> jacob <a href="https://www.bikeparts.com/?gclid=cjwKCAiAkan9BRAqEiwAP9X6UdjUPCNyQo-W40MpVXhybF1ZmGqLQ3BgvMS-LURmMo7TaEE5mBV6GxoC2mKQAvD_BwE">my favorite website</a></center>
+
+   <footer id="footer"><center>bike quizzess</center>
+
+ <form>
+    <div id="response"></div>
+     <p>1. Riding against traffic is:</p>
+     <input type="radio" name="trivia" value="no">safe</br>
+     <input type="radio" name="trivia" value="yes">illegal </br>
+     <input type="radio" name="trivia" value="no">Dangerous but your personal choice.</br>
+     <center><input onclick="answer()" type="button" value="bikes"></center>
+  </form>
+ 
+    <form>
+    <div id="response"></div>
+     <p>2; When riding your bike on the street, which side of the street should you be on?</p>
+     <input type="radio" name="trivia" value="yes">a. Right-hand side</br>
+     <input type="radio" name="trivia" value="no">b. Left-hand side</br>
+     <input type="radio" name="trivia" value="no">c. In the middle of the street
+      </br>
+     <center><input onclick="answer()" type="button" value="bikes"></center>
+  </form>
+
+
+ <form>
+    <div id="response"></div>
+     <p>3; You are wearing your bike helmet correctly when it:</p>
+     <input type="radio" name="trivia" value="no">Is flat on your head</br>
+     <input type="radio" name="trivia" value="no">Fits snugly with the buckle fastened</br>
+     <input type="radio" name="trivia" value="no">Does not obstruct your view</br>
+     <input type="radio" name="trivia" value="yes">All of the above</br>
+     <center><input onclick="answer()" type="button" value="bikes"></center>
+  </form>
+  
+   <form>
+    <div id="response"></div>
+     <p>4. Do we walk with or against traffic?</p>
+     <input type="radio" name="trivia" value="no">With traffic</br>
+     <input type="radio" name="trivia" value="yes">Against traffic</br>
+     <center><input onclick="answer()" type="button" value="bikes"></center>
+  </form>
+ 
+  <form>
+    <div id="response"></div>
+     <p>1. Do we bike with or against traffic?</p>
+     <input type="radio" name="trivia" value="no">With traffic</br>
+     <input type="radio" name="trivia" value="yes">Against traffic</br>
+     <center><input onclick="answer()" type="button" value="bikes"></center>
+  </form>
+     
+
+
+
+
+
+   </footer>
+   
+   
+    </body>
+</html>
